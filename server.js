@@ -7,7 +7,7 @@ const app =express();
 const port = process.env.port || "8000";
 
 app.get('/', (req,res)=>{
-    res.status(200).send('hey get')
+    res.status(200).send('hello world')
 })
 
 app.listen(port,()=>{
