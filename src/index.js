@@ -4,13 +4,13 @@ const express = require('express');
 const path = require('path');
 
 const app =express();
-const port = process.env.port || "8000";
+const port = process.env.port || "3000";
 
 app.get('/', (req,res)=>{
     res.status(200).send('hello world')
 })
 
-app.listen(port,()=>{
+app.listen(3000,()=>{
     console.log(`app is running on port ${port}`)
 })
  
