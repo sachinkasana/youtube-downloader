@@ -4,14 +4,14 @@ const express = require('express');
 const path = require('path');
 
 const app =express();
-const port = process.env.port || "3000";
+
 
 app.get('/', (req,res)=>{
     res.status(200).send('hello world')
 })
-
-app.listen(3000,()=>{
-    console.log(`app is running on port ${port}`)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT,()=>{
+    console.log(`app is running on port ${PORT}`)
 })
  
 // const url = 'https://www.youtube.com/watch?v=Csqbs61RL7Q';
